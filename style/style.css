@@ -1,0 +1,243 @@
+:root{
+        --main-bg: #C6C4C6;
+        --bg: #FFFFFF;
+        --blue: #4074CE;
+        --white: #fff;
+        --black: #000;
+        --gray: #515050;
+
+
+
+
+}
+
+
+*{
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+}
+
+
+
+html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-padding-top: 5.5rem;
+        scroll-behavior: smooth;
+
+}
+
+body{
+        background-color: var(--main-bg);
+        padding: 0 2%;
+}
+
+.line{
+        clear: both;
+        width: 100%;
+        height: 1rem;
+        background: var(--blue);
+}
+
+img{
+        width: 100%;
+}
+button{
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        color: var(--white);
+        font-weight: bold;
+        background: var(--blue);
+        border-radius: .5rem;    
+}
+
+button:hover{
+        color: var(--black);
+        cursor: pointer;
+}
+
+.wrapper{
+        max-width: 750px;
+        margin: 0 auto;
+        background-color: var(--bg);
+        
+}
+
+
+.wrapper .header{
+        background-color: var(--blue);
+        text-align: center;
+        padding: 2rem 2%;
+}
+
+.wrapper .header .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        color: var(--white);
+        font-size: 3rem;
+}
+
+.wrapper .home{
+        text-align: center;
+}
+
+.wrapper .home img{
+        max-width: 28rem;
+        padding: 2rem 2%;
+}
+
+
+.wrapper .section{
+        text-align: center;
+        padding: 4rem 2%;
+}
+
+.wrapper .section h1{
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+        color: var(--black);
+        font-weight: bold;
+}
+
+.wrapper .section h1 span{
+        color: var(--blue);
+}
+
+.wrapper .section p{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        letter-spacing: .5px;
+        color: var(--gray);
+        padding-bottom: 2rem;
+}
+
+/* .wrapper .section button{
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        color: var(--white);
+        font-weight: bold;
+        background: var(--blue);
+        border-radius: .5rem;
+} */
+
+.wrapper .section button:hover{
+        color: var(--black);
+        cursor: pointer;
+}
+
+.wrapper .section_two{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 4rem;
+        padding: 5rem 2%;
+}
+
+.wrapper .section_two .text h2{
+        font-size: 2rem;
+        color: var(--black);
+        font-weight: bold;
+        padding-bottom: 4rem;
+}
+
+.wrapper .section_two .text p{
+        font-size: 1.8rem;
+        padding-bottom: 2rem;
+}
+
+.wrapper .section_three{
+        background: var(--blue);
+        padding: 3rem 4%;
+        text-align: center;
+        font-size: 1.1rem;
+        color: var(--white);
+        line-height: 2.5rem;
+        font-weight: bolder;
+}
+
+.wrapper .section_three h3{
+        padding-top: 2rem;
+        font-size: 2rem;
+}
+
+
+.wrapper .footer .footer_container{
+        background-color: var(--footer-bg);
+        text-align: center;
+        padding: 5rem 2%;
+}
+
+.wrapper .footer .footer_container img{
+        max-width: 30rem ;
+        padding-bottom: 3rem;
+}
+
+.wrapper .footer .footer_container p{
+        font-size: 2rem;
+        color: #000;
+}
+
+.wrapper .footer .footer_container p span{
+        color: var(--blue);
+}
+
+
+.wrapper .footer .line-two{
+        clear: both;
+        width: 100%;
+        height: 2.5rem;
+        background-color: var(--blue);
+}
+
+
+
+
+
+
+
+
+
+/* media queries starts */
+
+
+
+@media (max-width: 768px){
+        html{
+                font-size: 55%;
+        }
+}
+
+@media (max-width: 600px){
+        .wrapper .section_two{
+                flex-direction: column;
+                width: 80%;
+                margin: 0 auto;
+        } 
+}
+
+
+
+@media (max-width: 450px){
+        html{
+                font-size: 50%;
+        }
+
+        .wrapper .section_two{
+                flex-direction: column;
+                width: 95%;
+                margin: 0 auto;
+        }
+}
+
+/* media queries ends */
